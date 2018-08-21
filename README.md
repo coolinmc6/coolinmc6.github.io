@@ -1,5 +1,7 @@
 # README
 
+To view this live: [https://coolinmc6.github.io/](https://coolinmc6.github.io/)
+
 ## CM Notes
 
 ### How to setup this repo
