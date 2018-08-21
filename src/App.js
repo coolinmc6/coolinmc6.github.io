@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import Logo from './artwork/twitter_header_photo_1.png';
+
+let logoStyle = {
+  maxWidth: "100vw"
+}
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Colin's New GitHub User Page</h1>
-        </header>
-        <p>This is some text</p>
+      <div>
+        <NavBar />
+        <img src={Logo} style={logoStyle}/>
       </div>
     );
   }
