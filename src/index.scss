@@ -1,25 +1,38 @@
+
 /*************************************************************************************************/
+// MAIN IMAGE
 /*************************************************************************************************/
+
+
 /*************************************************************************************************/
+// PORTFOLIO
 /*************************************************************************************************/
 .portfolio {
-  vertical-align: top;
-  text-align: center; }
+	vertical-align: top;
+	text-align: center;
+}
 
 .portfolio-card {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 350px;
-  margin: 0.5rem; }
+	display: inline-block;
+	vertical-align: top;
+	max-width: 350px;
+	margin: 0.5rem;
+	.card-img-top {
+		// max-height: 100px;
+		width: 80%;
 
-.portfolio-card .card-img-top {
-  width: 80%; }
+	}
+}
 
 @media screen and (min-width: 650px) {
-  .portfolio-card {
-    width: 45%; } }
+	.portfolio-card {
+		width: 45%;
+	}
+}
 
 @media screen and (min-width: 900px) {
-  .portfolio-card {
-    width: 31%;
-    max-width: 325px; } }
+	.portfolio-card {
+		width: 31%;
+		max-width: 325px;
+	}
+}
