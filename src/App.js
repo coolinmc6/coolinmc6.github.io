@@ -18,7 +18,7 @@ const contentArray = [
 		text: 'A web app that allows users to create their own library of snippets to quickly look up custom code.',
 		link: 'https://coolinmc6.github.io/code-assist/',
 		createDate: '',
-		technologies: []
+		technologies: ['javascript','react', 'redux']
 	}
 	// {
 	// 	image: '',
