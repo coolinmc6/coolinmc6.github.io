@@ -24,12 +24,12 @@ const contentArray = [
 	},
 	{
 		image: NoImage,
-		title: 'Basic Reduce Counter',
+		title: 'Basic Redux Counter',
 		text: 'My first Redux app with React; very boring but works!',
 		link: 'https://coolinmc6.github.io/counter-redux-CM/',
 		repo: 'https://github.com/coolinmc6/counter-redux-CM',
 		createDate: '',
-		technologies: []
+		technologies: ['javascript', 'react', 'redux']
 	},
 	{
 		image: NoImage,
@@ -39,21 +39,8 @@ const contentArray = [
 		repo: 'https://github.com/coolinmc6/react-playground',
 		createDate: '',
 		technologies: ['javascript','react', 'redux']
-	},
-	// {
-	// 	image: '',
-	// 	title: 'Code Assist',
-	// 	text: 'A web app that allows users to create their own library of snippets to quickly look up custom code.',
-	// 	link: '',
-	// 	createDate: ''
-	// },
-	// {
-	// 	image: '',
-	// 	title: 'Code Assist',
-	// 	text: 'A web app that allows users to create their own library of snippets to quickly look up custom code.',
-	// 	link: '',
-	// 	createDate: ''
-	// }
+	}
+
 ]
 
 
