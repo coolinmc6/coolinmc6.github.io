@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 // images
 import Logo from './artwork/twitter_header_photo_1.png';
 import CodeAssist from './artwork/Code-Assist.png';
+import NoImage from './artwork/no-image.png';
 
 let logoStyle = {
 	maxWidth: "100vw"
@@ -17,23 +18,28 @@ const contentArray = [
 		title: 'Code Assist',
 		text: 'A web app that allows users to create their own library of snippets to quickly look up custom code.',
 		link: 'https://coolinmc6.github.io/code-assist/',
+		repo: 'https://github.com/coolinmc6/code-assist',
 		createDate: '',
 		technologies: ['javascript','react', 'redux']
-	}
-	// {
-	// 	image: '',
-	// 	title: 'Code Assist',
-	// 	text: 'A web app that allows users to create their own library of snippets to quickly look up custom code.',
-	// 	link: '',
-	// 	createDate: ''
-	// },
-	// {
-	// 	image: '',
-	// 	title: 'Code Assist',
-	// 	text: 'A web app that allows users to create their own library of snippets to quickly look up custom code.',
-	// 	link: '',
-	// 	createDate: ''
-	// },
+	},
+	{
+		image: NoImage,
+		title: 'Basic Reduce Counter',
+		text: 'My first Redux app with React; very boring but works!',
+		link: 'https://coolinmc6.github.io/counter-redux-CM/',
+		repo: 'https://github.com/coolinmc6/counter-redux-CM',
+		createDate: '',
+		technologies: []
+	},
+	{
+		image: NoImage,
+		title: 'React Playground',
+		text: 'A React app that allows me to play around with React and Redux.',
+		link: 'https://coolinmc6.github.io/react-playground/',
+		repo: 'https://github.com/coolinmc6/react-playground',
+		createDate: '',
+		technologies: ['javascript','react', 'redux']
+	},
 	// {
 	// 	image: '',
 	// 	title: 'Code Assist',
