@@ -49,3 +49,29 @@ export const getTechnologyInfo = (technology) => {
 
 	return obj;
 }
+
+export const specialCases = (title) => {
+	let obj = {
+		className: ''
+	}
+
+	switch(title) {
+		case 'React Playground':
+			obj.className = 'react-playground';
+			break;
+		case 'Basic Redux Counter':
+			obj.className = 'redux-counter';
+			break;
+		case 'React ToDo #1 (no Redux)':
+			obj.className = 'react-todo-1'
+			break;
+		case 'React ToDo #2 (with Redux)':
+			obj.className = 'react-redux-todo';
+			break;
+		default:
+			obj.className = '';
+			break;
+	}
+
+	return obj;
+}

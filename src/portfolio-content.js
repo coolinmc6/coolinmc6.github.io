@@ -2,6 +2,9 @@
 import CodeAssist from './artwork/Code-Assist.png';
 import NoImage from './artwork/no-image.png';
 import Playground from './artwork/temp.png'
+import ReactReduxTodo from './artwork/react-redux-todo.png';
+import ReactToDo1 from './artwork/react-todo1-v1.png';
+import ReduxCounter from './artwork/redux-counter2.png';
 
 // portfolio array
 export const contentArray = [
@@ -26,7 +29,7 @@ export const contentArray = [
 		customOrder: 150
 	},
 	{
-		image: NoImage,
+		image: ReduxCounter,
 		title: 'Basic Redux Counter',
 		text: 'My first Redux app with React; very boring but works!',
 		link: 'https://coolinmc6.github.io/counter-redux-CM/',
@@ -37,7 +40,7 @@ export const contentArray = [
 	},
 	
 	{
-		image: NoImage,
+		image: ReactToDo1,
 		title: 'React ToDo #1 (no Redux)',
 		text: 'This is my first todo app using React state.',
 		link: 'https://coolinmc6.github.io/CM-todo-react/',
@@ -47,7 +50,7 @@ export const contentArray = [
 		customOrder: 1000
 	},
 	{
-		image: NoImage,
+		image: ReactReduxTodo,
 		title: 'React ToDo #2 (with Redux)',
 		text: 'This is another todo app using React and Redux.',
 		link: 'https://coolinmc6.github.io/cm-todo-react2/',
