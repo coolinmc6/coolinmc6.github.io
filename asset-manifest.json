@@ -1,12 +1,15 @@
 {
   "main.css": "static/css/main.9de72a52.css",
   "main.css.map": "static/css/main.9de72a52.css.map",
-  "main.js": "static/js/main.9af118af.js",
-  "main.js.map": "static/js/main.9af118af.js.map",
+  "main.js": "static/js/main.cb1739d7.js",
+  "main.js.map": "static/js/main.cb1739d7.js.map",
   "static/media/Code-Assist.png": "static/media/Code-Assist.16e44c5b.png",
   "static/media/javascript-logo.png": "static/media/javascript-logo.85458a67.png",
+  "static/media/materialize-logo.png": "static/media/materialize-logo.0df3ec68.png",
   "static/media/no-image.png": "static/media/no-image.32e55f10.png",
+  "static/media/react-blog.png": "static/media/react-blog.cf2a87f6.png",
   "static/media/react-logo.png": "static/media/react-logo.2e5267fb.png",
+  "static/media/redux-form.png": "static/media/redux-form.5ec343a2.png",
   "static/media/redux-logo.svg": "static/media/redux-logo.aa0a3376.svg",
   "static/media/sass-logo.png": "static/media/sass-logo.74c36290.png",
   "static/media/temp.png": "static/media/temp.2f48b67b.png"
