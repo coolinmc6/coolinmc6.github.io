@@ -1,8 +1,12 @@
 
 // images
+import BootstrapLogo from './artwork/bootstrap-logo.png';
 import JavaScriptLogo from './artwork/javascript-logo.png';
+import MaterializeLogo from './artwork/materialize-logo.png';
 import NoImage from './artwork/no-image.png';
 import ReactLogo from './artwork/react-logo.png';
+import ReactRouter from './artwork/react-router.png';
+import ReduxForm from './artwork/redux-form.png';
 import ReduxLogo from './artwork/redux-logo.svg';
 import SassLogo from './artwork/sass-logo.png';
 
@@ -17,11 +21,23 @@ export const getTechnologyInfo = (technology) => {
 	}
 
 	switch(technology) {
+		case 'bootstrap':
+		case 'Bootstrap':
+			obj.name = 'bootstrap';
+			obj.title = 'Bootstrap';
+			obj.img = BootstrapLogo;
+			break;
 		case 'javascript':
 		case 'JavaScript':
 			obj.name = 'javascript';
 			obj.title = 'JavaScript';
 			obj.img = JavaScriptLogo;
+			break;
+		case 'materialize':
+		case 'Materialize':
+			obj.name = 'materialize';
+			obj.title = 'Materialize';
+			obj.img = MaterializeLogo;
 			break;
 		case 'react':
 		case 'React':
@@ -29,11 +45,23 @@ export const getTechnologyInfo = (technology) => {
 			obj.title = 'React';
 			obj.img = ReactLogo;
 			break;
+		case 'react-router':
+		case 'React-Router':
+			obj.name = 'react-router';
+			obj.title = 'React Router';
+			obj.img = ReactRouter;
+			break;
 		case 'redux':
 		case 'Redux':
 			obj.name = 'redux';
 			obj.title = 'Redux';
 			obj.img = ReduxLogo;
+			break;
+		case 'redux-form':
+		case 'Redux-Rorm':
+			obj.name = 'redux-form';
+			obj.title = 'Redux-Form';
+			obj.img = ReduxForm;
 			break;
 		case 'sass':
 		case 'Sass':

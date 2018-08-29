@@ -17,21 +17,23 @@ import { contentArray } from './portfolio-content';
 class App extends Component {
 	constructor() {
 		super();
-		this.state = {cards: contentArray}
+		this.state = {cards: contentArray.sort((a,b) => a.customOrder - b.customOrder)}
 	}
 
 
 	// Render portfolio block
 	renderCard(obj) {
 		let specialClass = specialCases(obj.title);
-		console.log(obj.title)
-		console.log(specialClass);
-		
+		console.log(this.state.cards)
+
 		return (
 			<div className={`card portfolio-card ${specialClass.className}`} key={Math.floor(Math.random()*100000)}>
 				<div className="card-top-half">
 					<div className="img-container">
-			  			<img className="card-img-top" src={obj.image} alt="Card image cap"/>
+						<a target="_blank" href={obj.link}>
+			  				<img className="card-img-top" src={obj.image} alt="Card image cap"/>
+			  			</a>
+
 			  		</div>
 			  		<div className="card-body">
 			    		<h5 className="card-title">{obj.title}</h5>
@@ -44,8 +46,11 @@ class App extends Component {
 			  		</li>
 			  		<li className="list-group-item">
 			  			<div className="important-links">
-			  				<a href={obj.link} className="btn btn-primary see-live" target="_blank">See it live</a>
-			  				<a href={obj.repo}><img src={GitHub} title="See the code" className="github-repo"/></a>
+			  				{obj.link != '#' &&  (
+		  						<a href={obj.link} className="btn btn-primary see-live" target="_blank">See it live</a>
+		  					)}
+			  				
+			  				<a target="_blank" href={obj.repo}><img src={GitHub} title="See the code" className="github-repo"/></a>
 			  			</div>
 			  		</li>
 			  	</ul>
@@ -55,7 +60,7 @@ class App extends Component {
 
 	// 
 	renderTechnologies(array) {
-
+		
 		return array.map(tech => {
 			const obj = getTechnologyInfo(tech)
 			return (
