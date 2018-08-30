@@ -1,5 +1,6 @@
 // images
 import CodeAssist from './artwork/Code-Assist.png';
+import EggheadReact from './artwork/egghead-react.png';
 import NoImage from './artwork/no-image.png';
 import Playground from './artwork/temp.png';
 import ReactBlog from './artwork/react-blog.png';
@@ -70,6 +71,27 @@ export const contentArray = [
 		createDate: '',
 		technologies: ['javascript', 'react', 'redux', 'redux-form', 'sass', 'bootstrap', 'react-router'],
 		customOrder: 900
+	},
+	{
+		image: ReactBlog,
+		title: 'React Blog App',
+		text: 'This app uses React, Redux, ReduxForm, and some more advanced styling in the form of Sass and Bootstrap. This was an even more complex app that allowed me to learn Redux Form for adding blog posts and dynamic routing in React Router.',
+		link: 'https://coolinmc6.github.io/cm-blog/',
+		repo: 'https://github.com/coolinmc6/cm-blog',
+		createDate: '',
+		technologies: ['javascript', 'react', 'redux', 'redux-form', 'sass', 'bootstrap', 'react-router'],
+		customOrder: 900
+	},
+	{
+		image: EggheadReact,
+		title: 'Egghead.io: Build Your First Production Quality React App',
+		text: 'This Egghead.io course was great introduction to production-quality React that covered React state, testing, and HTTP requests to a "server". It also introduced me to json-server which I use in my Code Assist app.',
+		link: '#',
+		repo: 'https://github.com/coolinmc6/egghead-todo',
+		createDate: '',
+		technologies: ['javascript', 'react'],
+		customOrder: 900,
+		courseLink: 'https://egghead.io/courses/build-your-first-production-quality-react-app'
 	}
 
 ]

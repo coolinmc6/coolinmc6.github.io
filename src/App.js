@@ -17,7 +17,20 @@ import { contentArray } from './portfolio-content';
 class App extends Component {
 	constructor() {
 		super();
-		this.state = {cards: contentArray.sort((a,b) => a.customOrder - b.customOrder)}
+		let techHash = {};
+		contentArray.map(project => {
+			project.technologies.map(tech => {
+				if(techHash[tech]) {
+					techHash[tech]++;
+				} else {
+					techHash[tech] = 1;
+				}
+			})
+		})
+		this.state = {
+			cards: contentArray.sort((a,b) => a.customOrder - b.customOrder),
+			technologies: techHash
+		}
 	}
 
 
@@ -58,9 +71,14 @@ class App extends Component {
 		)
 	}
 
+	// // 
+	// renderPortfolioStats() {
+
+	// 	return 
+	// }
+
 	// 
 	renderTechnologies(array) {
-		
 		return array.map(tech => {
 			const obj = getTechnologyInfo(tech)
 			return (
@@ -74,6 +92,7 @@ class App extends Component {
 			<div>
 				{/*<NavBar />*/}
 				<img src={Logo} className="main-logo"/>
+				<div className="container filter-portfolio"></div>
 				<div className="container portfolio">
 					{this.state.cards.map(card => this.renderCard(card))}
 				</div>
