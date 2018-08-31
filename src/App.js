@@ -110,7 +110,7 @@ class App extends Component {
 				<div className="card filter-item" key={key}>
 					<div className="card-body">
 						<input type="checkbox" onChange={(e) => this.updateFilter(key, e.target.checked)}/>
-						<img src={filter.img} title={filter.img}/> {key}: {obj[key]}
+						<img src={filter.img} title={filter.name}/> {key}: {obj[key]}
 					</div>
 				</div>
 			)

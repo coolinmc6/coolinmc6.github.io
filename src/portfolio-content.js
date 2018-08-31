@@ -72,16 +72,7 @@ export const contentArray = [
 		technologies: ['javascript', 'react', 'redux', 'redux-form', 'sass', 'bootstrap', 'react-router'],
 		customOrder: 900
 	},
-	{
-		image: ReactBlog,
-		title: 'React Blog App',
-		text: 'This app uses React, Redux, ReduxForm, and some more advanced styling in the form of Sass and Bootstrap. This was an even more complex app that allowed me to learn Redux Form for adding blog posts and dynamic routing in React Router.',
-		link: 'https://coolinmc6.github.io/cm-blog/',
-		repo: 'https://github.com/coolinmc6/cm-blog',
-		createDate: '',
-		technologies: ['javascript', 'react', 'redux', 'redux-form', 'sass', 'bootstrap', 'react-router'],
-		customOrder: 900
-	},
+
 	{
 		image: EggheadReact,
 		title: 'Egghead.io: Build Your First Production Quality React App',
