@@ -20,16 +20,17 @@ class App extends Component {
 		let techHash = {};
 		contentArray.map(project => {
 			project.technologies.map(tech => {
-				if(techHash[tech]) {
-					techHash[tech]++;
+				if(techHash[tech.toLowerCase()]) {
+					techHash[tech.toLowerCase()]++;
 				} else {
-					techHash[tech] = 1;
+					techHash[tech.toLowerCase()] = 1;
 				}
 			})
 		})
 		this.state = {
 			cards: contentArray.sort((a,b) => a.customOrder - b.customOrder),
-			technologies: techHash
+			technologies: techHash,
+			filters: { technologies: ['all'], types: ['all']}
 		}
 	}
 
@@ -37,7 +38,6 @@ class App extends Component {
 	// Render portfolio block
 	renderCard(obj) {
 		let specialClass = specialCases(obj.title);
-		console.log(this.state.cards)
 
 		return (
 			<div className={`card portfolio-card ${specialClass.className}`} key={Math.floor(Math.random()*100000)}>
@@ -71,13 +71,56 @@ class App extends Component {
 		)
 	}
 
-	// // 
-	// renderPortfolioStats() {
-
-	// 	return 
-	// }
-
+	// if (val) => add key
+	// if (!val) => remove key
 	// 
+	updateFilter(key, val) {
+		console.log(key);
+		console.log(val);
+		if(key == 'all') {
+			this.setState({
+				...this.state, 
+				filters: { technologies: ['all'], ...this.state.filters}
+			})
+		} else {
+			// update filter
+			let arr = this.state.filters.technologies.filter(t => t != 'all');
+			arr.push(key);
+
+			// which cards to show
+			let filter = [];
+			let found = contentArray.map(proj => {
+				if(proj.technologies.some(t => arr.includes(t))) {
+					return proj;
+				}
+				return;
+			})
+			console.log(found);
+			this.setState({
+				...this.state, 
+				filters: { technologies: arr, ...this.state.filters}
+			})
+		}
+	}
+
+	renderFilter(obj) {
+		return Object.keys(obj).sort().map(key => {
+			const filter = getTechnologyInfo(key)
+			return (
+				<div className="card filter-item" key={key}>
+					<div className="card-body">
+						<input type="checkbox" onChange={(e) => this.updateFilter(key, e.target.checked)}/>
+						<img src={filter.img} title={filter.img}/> {key}: {obj[key]}
+					</div>
+				</div>
+			)
+			
+		})
+		
+
+			
+	}
+
 	renderTechnologies(array) {
 		return array.map(tech => {
 			const obj = getTechnologyInfo(tech)
@@ -91,8 +134,11 @@ class App extends Component {
 		return (
 			<div>
 				{/*<NavBar />*/}
+				{console.log(this.state)}
 				<img src={Logo} className="main-logo"/>
-				<div className="container filter-portfolio"></div>
+				<div className="container filter-portfolio">
+					{this.renderFilter(this.state.technologies)}
+				</div>
 				<div className="container portfolio">
 					{this.state.cards.map(card => this.renderCard(card))}
 				</div>
