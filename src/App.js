@@ -30,7 +30,7 @@ class App extends Component {
 		this.state = {
 			cards: contentArray.sort((a,b) => a.customOrder - b.customOrder),
 			technologies: techHash,
-			filters: { technologies: ['all'], types: ['all']}
+			filters: { technologies: [], types: []}
 		}
 	}
 
@@ -71,46 +71,51 @@ class App extends Component {
 		)
 	}
 
+	// Update Filter for Technologies
 	// if (val) => add key
 	// if (!val) => remove key
 	// 
 	updateFilter(key, val) {
-		console.log(key);
-		console.log(val);
-		if(key == 'all') {
-			this.setState({
-				...this.state, 
-				filters: { technologies: ['all'], ...this.state.filters}
-			})
+		// update array of technologies to look for
+		let arr = this.state.filters.technologies
+		if(val) {
+			arr.push(key)
 		} else {
-			// update filter
-			let arr = this.state.filters.technologies.filter(t => t != 'all');
-			arr.push(key);
-
-			// which cards to show
-			let filter = [];
-			let found = contentArray.map(proj => {
-				if(proj.technologies.some(t => arr.includes(t))) {
-					return proj;
-				}
-				return;
-			})
-			console.log(found);
-			this.setState({
-				...this.state, 
-				filters: { technologies: arr, ...this.state.filters}
-			})
+			let idx = arr.indexOf(key);
+			idx > -1 && arr.splice(idx, 1)
 		}
+
+		// which cards to show
+		let filter = [];
+		let found;
+		if(arr.length == 0) {
+			found = contentArray;
+		} else {
+			found = contentArray.filter(proj => proj.technologies.some(t => arr.includes(t)))	
+		}
+
+		
+		this.setState({
+			...this.state, 
+			filters: { technologies: arr, ...this.state.filters},
+			cards: found
+		})
+		
 	}
 
 	renderFilter(obj) {
 		return Object.keys(obj).sort().map(key => {
 			const filter = getTechnologyInfo(key)
 			return (
-				<div className="card filter-item" key={key}>
-					<div className="card-body">
+
+				<div className="filter-item" key={key}>
+					<div className="filter-card-parent">
 						<input type="checkbox" onChange={(e) => this.updateFilter(key, e.target.checked)}/>
-						<img src={filter.img} title={filter.name}/> {key}: {obj[key]}
+						<div className="card-body">
+							<img src={filter.img} title={filter.name}/>  
+							<span className="filter-category">{key}</span> 
+							<span className="filter-count">{obj[key]}</span>
+						</div>
 					</div>
 				</div>
 			)
