@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri");
 /*************************************************************************************************/
 /*************************************************************************************************/
 .main-logo {
@@ -10,17 +11,15 @@
   display: inline-block;
   margin: 0.5rem;
   vertical-align: top;
-  position: relative;
-  min-width: 180px; }
+  position: relative; }
 
 .filter-item .filter-card-parent {
-  border: 1px solid #ffeaa7;
-  border-radius: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
   text-align: left;
   position: relative;
   padding: 0.5rem;
-  padding-left: 2.0rem;
-  background-color: #ffeaa7; }
+  padding-left: 2.0rem; }
 
 .filter-item .filter-card-parent input {
   top: 50%;
@@ -29,42 +28,42 @@
   transform: translateY(-50%); }
 
 .filter-item .card-body {
-  padding: 0.3rem;
-  text-align: center;
-  width: 75%;
-  right: 5%;
-  top: 5%;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 0rem;
+  text-align: left;
   border: 1px solid #fff;
   background-color: #fff;
-  height: 62px;
-  width: 165px; }
+  height: 40px; }
 
-.filter-item .card-body img {
-  max-width: 50px;
-  max-height: 50px;
-  margin-top: 0.1rem;
-  position: absolute;
-  left: 36px;
+.filter-item .card-body .img-parent, .filter-item .card-body .category-parent, .filter-item .card-body .count-parent {
+  display: inline-block;
+  height: 40px;
+  vertical-align: top; }
+
+.filter-item .card-body .img-parent {
+  width: 40px;
+  position: relative; }
+
+.filter-item .card-body .img-parent img {
+  max-width: 40px;
+  max-height: 40px;
   top: 50%;
-  transform: translateY(-50%); }
-
-.filter-item .filter-category {
-  font-size: 0.8rem;
-  height: 1.1rem;
+  transform: translateY(-50%);
   position: absolute;
-  left: 54%;
-  transform: translateX(-30%);
-  top: 30%; }
+  left: 0; }
 
-.filter-item .filter-count {
-  position: absolute;
-  right: 18px;
-  top: 10px;
+.filter-item .card-body .category-parent {
+  padding-left: 8px;
+  padding-top: 5px; }
+
+.filter-item .card-body .category-parent .filter-category {
+  font-size: 0.9rem; }
+
+.filter-item .card-body .count-parent {
+  font-family: Helvetica;
+  padding-left: 0.85rem;
+  font-weight: 300; }
+
+.filter-item .card-body .count-parent .filter-count {
   font-size: 1.8rem; }
 
 /*************************************************************************************************/

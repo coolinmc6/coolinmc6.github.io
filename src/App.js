@@ -112,9 +112,15 @@ class App extends Component {
 					<div className="filter-card-parent">
 						<input type="checkbox" onChange={(e) => this.updateFilter(key, e.target.checked)}/>
 						<div className="card-body">
-							<img src={filter.img} title={filter.name}/>  
-							<span className="filter-category">{key}</span> 
-							<span className="filter-count">{obj[key]}</span>
+							<div className="img-parent">
+								<img src={filter.img} title={filter.name}/>  
+							</div>
+							<div className="category-parent">
+								<span className="filter-category">{key}</span> 
+							</div>
+							<div className="count-parent">
+								<span className="filter-count">{obj[key]}</span>
+							</div>
 						</div>
 					</div>
 				</div>

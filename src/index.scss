@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri');
 
 /*************************************************************************************************/
 // MAIN IMAGE
@@ -16,17 +17,13 @@
 	// height: 50px;
 	vertical-align: top;
 	position: relative;
-	min-width: 180px;
 	.filter-card-parent {
-		border: 1px solid #ffeaa7;
-		// border: 2px solid #4267A1;
-		border-radius: 16px;
+		border: 1px solid #ddd;
+		border-radius: 3px;
 		text-align: left;
 		position: relative;
 		padding: 0.5rem;
 		padding-left: 2.0rem;
-		background-color: #ffeaa7;
-		// background-color: #4267A1;
 		input {
 			top: 50%;
 		    left: 3%;
@@ -35,51 +32,68 @@
 		}
 	}
 	.card-body {
-		padding: 0.3rem;
-	    text-align: center;
-	    width: 75%;
-	    right: 5%;
-	    top: 5%;
-	    margin: auto;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
+		padding: 0rem;
+	    text-align: left;
 	    border: 1px solid #fff;
 	    background-color: #fff;
-	    height: 62px;
-	    width: 165px;
-		img {
-			max-width: 50px;
-		    max-height: 50px;
-		    margin-top: 0.1rem;
-		    position: absolute;
-		    left: 36px;
-		    top: 50%;
-		    transform: translateY(-50%);
-		}
+	    height: 40px;
+	    .img-parent, .category-parent, .count-parent {
+	    	display: inline-block;
+	    	height: 40px;
+	    	vertical-align: top;
+	    }
+	    .img-parent {
+	    	width: 40px;
+	    	position: relative;
+	    	img {
+	    		max-width: 40px;
+	    	    max-height: 40px;
+	    	    top: 50%;
+	    	    transform: translateY(-50%);
+	    	    position: absolute;
+	    	    left: 0;
+	    	    // position: absolute;
+	    	    // left: 36px;
+	    	    // top: 50%;
+	    	    // transform: translateY(-50%);
+	    	}
+	    }
+	    .category-parent {
+			padding-left: 8px;
+			padding-top: 5px;
+	    	.filter-category {
+	    		font-size: 0.9rem;
+	    	}
+	    }
+	    .count-parent {
+	    	// font-family: 'Amiri', cursive;
+	    	// font-family: 'Pacifico', cursive;
+	    	font-family: Helvetica;
+			padding-left: 0.85rem;
+	    	font-weight: 300;
+	    	// font-family: 'Libre Baskerville', serif;
+	    	// font-family: 'Arvo', serif;
+	    	// font-family: 'Abril Fatface', cursive;
+	    	// font-family: 'Righteous', cursive;
+	    	// font-family: 'Patua One', cursive;
+			
+			.filter-count {
+				// position: absolute;
+			 //    right: 18px;
+			 //    top: 10px;
+			    font-size: 1.8rem;
+			}
+	    }
+		
 	}
 
 	.filter-category, .filter-count {
 		
 	}
 
-	.filter-category {
-		font-size: 0.8rem;
+	
 
-		height: 1.1rem;
-		position: absolute;
-		left: 54%;
-		transform: translateX(-30%);
-		top: 30%;
-	}
-
-	.filter-count {
-		position: absolute;
-	    right: 18px;
-	    top: 10px;
-	    font-size: 1.8rem;
-	}
+	
 }
 
 /*************************************************************************************************/
