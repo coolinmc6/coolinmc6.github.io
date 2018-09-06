@@ -31,7 +31,7 @@ export const contentArray = [
 		repo: 'https://github.com/coolinmc6.github.io',
 		createDate: '',
 		technologies: ['javascript','react', 'sass'],
-		customOrder: 100
+		customOrder: 155
 	},
 	{
 		image: Playground,
