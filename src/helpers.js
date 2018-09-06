@@ -96,6 +96,9 @@ export const specialCases = (title) => {
 		case 'React ToDo #2 (with Redux)':
 			obj.className = 'react-redux-todo';
 			break;
+		case 'Coolinmc6 GitHub User Page':
+			obj.className = 'coolinmc6-github'
+			break;
 		default:
 			obj.className = '';
 			break;

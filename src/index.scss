@@ -178,6 +178,20 @@
 	}
 }
 
+.portfolio-card.coolinmc6-github {
+	.img-container {
+		width:100%;
+
+		a {
+			width: 100%;
+			img {
+				width: 100%;
+				max-width: initial;
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 650px) {
 	.portfolio-card {
 		width: 45%;

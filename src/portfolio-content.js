@@ -1,5 +1,6 @@
 // images
 import CodeAssist from './artwork/Code-Assist.png';
+import ColinMc from './artwork/twitter_header_photo_1.png';
 import EggheadReact from './artwork/egghead-react.png';
 import NoImage from './artwork/no-image.png';
 import Playground from './artwork/temp.png';
@@ -19,6 +20,17 @@ export const contentArray = [
 		repo: 'https://github.com/coolinmc6/code-assist',
 		createDate: '',
 		technologies: ['javascript','react', 'redux', 'sass'],
+		customOrder: 100
+	},
+	{
+		image: ColinMc,
+		title: 'Coolinmc6 GitHub User Page',
+		text: 'It\'s this page!! This page was created using React to display my portfolio projects with a particular focus on giving outsiders the ability to filter my projects by technology and actually see it in action!',
+		link: 'https://coolinmc6.github.io/',
+		
+		repo: 'https://github.com/coolinmc6.github.io',
+		createDate: '',
+		technologies: ['javascript','react', 'sass'],
 		customOrder: 100
 	},
 	{
