@@ -103,6 +103,7 @@ class App extends Component {
 		
 	}
 
+	// Renders the technology filters
 	renderFilter(obj) {
 		return Object.keys(obj).sort().map(key => {
 			const filter = getTechnologyInfo(key)
@@ -127,9 +128,6 @@ class App extends Component {
 			)
 			
 		})
-		
-
-			
 	}
 
 	renderTechnologies(array) {
@@ -144,8 +142,6 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				{/*<NavBar />*/}
-				{console.log(this.state)}
 				<img src={Logo} className="main-logo"/>
 				<div className="container filter-portfolio">
 					{this.renderFilter(this.state.technologies)}
