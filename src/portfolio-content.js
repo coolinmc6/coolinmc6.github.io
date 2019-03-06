@@ -28,7 +28,7 @@ export const contentArray = [
 		text: 'It\'s this page!! This page was created using React to display my portfolio projects with a particular focus on giving outsiders the ability to filter my projects by technology and actually see it in action!',
 		link: 'https://coolinmc6.github.io/',
 		
-		repo: 'https://github.com/coolinmc6.github.io',
+		repo: 'https://github.com/coolinmc6/coolinmc6.github.io',
 		createDate: '',
 		technologies: ['javascript','react', 'sass'],
 		customOrder: 155
