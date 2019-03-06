@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/redux-form.5ec343a2.png"
   },
   {
-    "revision": "acc85e52946fe6b67324",
+    "revision": "4bd5e024ab1be3a88dc6",
     "url": "/static/css/main.8a4b6ad8.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/react-logo.2e5267fb.png"
   },
   {
-    "revision": "acc85e52946fe6b67324",
-    "url": "/static/js/main.acc85e52.chunk.js"
+    "revision": "4bd5e024ab1be3a88dc6",
+    "url": "/static/js/main.4bd5e024.chunk.js"
   },
   {
     "revision": "aa0a337603611296524a666b62a9ff23",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/static/media/react-blog.cf2a87f6.png"
   },
   {
-    "revision": "96fe3866f23d957d9e1e93231f8c8860",
+    "revision": "4736fafca36240e81c2e0b9860b9e67b",
     "url": "/index.html"
   }
 ];
