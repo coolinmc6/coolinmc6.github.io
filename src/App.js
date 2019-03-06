@@ -149,7 +149,6 @@ class App extends Component {
 				<div className="container portfolio">
 					{this.state.cards.map(card => this.renderCard(card))}
 				</div>
-				<div>...test</div>
 			</div>
 		);
 	}
