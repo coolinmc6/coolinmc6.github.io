@@ -13,3 +13,6 @@ To view this live: [https://coolinmc6.github.io/](https://coolinmc6.github.io/)
 	+ while in the source branch, in your terminal, deploy it using `npm run deploy`
 	+ **Remember:** All changes are to be made in your source branch. All deployments are from your source branch. Your master branch is really just the home for your build / production code so you'll never really have to touch it or switch to that branch
 	+ :fire::fire:**WARNING:** Do Not **EVER** merge changes from the master. It's the build code; your source branch MUST contain your source code!:fire::fire:
+- Updating:
+	+ [https://github.com/facebook/create-react-app/blob/master/CHANGELOG.md#migrating-from-1x-to-203](https://github.com/facebook/create-react-app/blob/master/CHANGELOG.md#migrating-from-1x-to-203)
+	+ [https://facebook.github.io/create-react-app/docs/updating-to-new-releases](https://facebook.github.io/create-react-app/docs/updating-to-new-releases)
