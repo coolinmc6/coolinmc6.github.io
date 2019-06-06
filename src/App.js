@@ -19,6 +19,7 @@ class App extends Component {
 		super();
 		let techHash = {};
 		contentArray.map(project => {
+			console.log('Update 06/06/2019')
 			project.technologies.map(tech => {
 				if(techHash[tech.toLowerCase()]) {
 					techHash[tech.toLowerCase()]++;
