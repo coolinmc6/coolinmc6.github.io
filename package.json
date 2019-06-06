@@ -9,7 +9,7 @@
   },
   "homepage": "https://coolinmc6.github.io",
   "devDependencies": {
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.12.0",
     "react-scripts": "2.0.3"
   },
   "scripts": {
