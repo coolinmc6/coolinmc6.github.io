@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^1.2.0",
-    "react": "^16.4.2",
+    "react": "^16.9.0",
     "react-dom": "^16.8.6"
   },
   "homepage": "https://coolinmc6.github.io",
