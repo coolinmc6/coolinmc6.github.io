@@ -5,7 +5,7 @@
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.9.0"
   },
   "homepage": "https://coolinmc6.github.io",
   "devDependencies": {
